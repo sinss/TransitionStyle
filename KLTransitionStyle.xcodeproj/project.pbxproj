@@ -14,6 +14,10 @@
 		B3D460141B019BC0004FB8FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D460131B019BC0004FB8FF /* Images.xcassets */; };
 		B3D460171B019BC0004FB8FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3D460151B019BC0004FB8FF /* LaunchScreen.xib */; };
 		B3D460231B019BC0004FB8FF /* KLTransitionStyleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D460221B019BC0004FB8FF /* KLTransitionStyleTests.m */; };
+		B3D460321B019D2A004FB8FF /* MaterialTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D460311B019D2A004FB8FF /* MaterialTransition.m */; };
+		B3D460351B01A864004FB8FF /* PresentedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D460341B01A864004FB8FF /* PresentedView.m */; };
+		B3D460391B01AB12004FB8FF /* PresentCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D460371B01AB12004FB8FF /* PresentCollectionView.m */; };
+		B3D4603A1B01AB12004FB8FF /* PresentCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3D460381B01AB12004FB8FF /* PresentCollectionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		B3D4601C1B019BC0004FB8FF /* KLTransitionStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KLTransitionStyleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D460211B019BC0004FB8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3D460221B019BC0004FB8FF /* KLTransitionStyleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLTransitionStyleTests.m; sourceTree = "<group>"; };
+		B3D460301B019D2A004FB8FF /* MaterialTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialTransition.h; sourceTree = "<group>"; };
+		B3D460311B019D2A004FB8FF /* MaterialTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialTransition.m; sourceTree = "<group>"; };
+		B3D460331B01A864004FB8FF /* PresentedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedView.h; sourceTree = "<group>"; };
+		B3D460341B01A864004FB8FF /* PresentedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedView.m; sourceTree = "<group>"; };
+		B3D460361B01AB12004FB8FF /* PresentCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentCollectionView.h; sourceTree = "<group>"; };
+		B3D460371B01AB12004FB8FF /* PresentCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentCollectionView.m; sourceTree = "<group>"; };
+		B3D460381B01AB12004FB8FF /* PresentCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresentCollectionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +92,17 @@
 		B3D460051B019BC0004FB8FF /* KLTransitionStyle */ = {
 			isa = PBXGroup;
 			children = (
+				B3D4602C1B019BCA004FB8FF /* classes */,
 				B3D4600A1B019BC0004FB8FF /* AppDelegate.h */,
 				B3D4600B1B019BC0004FB8FF /* AppDelegate.m */,
 				B3D4600D1B019BC0004FB8FF /* ViewController.h */,
 				B3D4600E1B019BC0004FB8FF /* ViewController.m */,
 				B3D460101B019BC0004FB8FF /* Main.storyboard */,
+				B3D460331B01A864004FB8FF /* PresentedView.h */,
+				B3D460341B01A864004FB8FF /* PresentedView.m */,
+				B3D460361B01AB12004FB8FF /* PresentCollectionView.h */,
+				B3D460371B01AB12004FB8FF /* PresentCollectionView.m */,
+				B3D460381B01AB12004FB8FF /* PresentCollectionView.xib */,
 				B3D460131B019BC0004FB8FF /* Images.xcassets */,
 				B3D460151B019BC0004FB8FF /* LaunchScreen.xib */,
 				B3D460061B019BC0004FB8FF /* Supporting Files */,
@@ -117,6 +134,15 @@
 				B3D460211B019BC0004FB8FF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3D4602C1B019BCA004FB8FF /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3D460301B019D2A004FB8FF /* MaterialTransition.h */,
+				B3D460311B019D2A004FB8FF /* MaterialTransition.m */,
+			);
+			name = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +227,7 @@
 			files = (
 				B3D460121B019BC0004FB8FF /* Main.storyboard in Resources */,
 				B3D460171B019BC0004FB8FF /* LaunchScreen.xib in Resources */,
+				B3D4603A1B01AB12004FB8FF /* PresentCollectionView.xib in Resources */,
 				B3D460141B019BC0004FB8FF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +247,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3D4600F1B019BC0004FB8FF /* ViewController.m in Sources */,
+				B3D460321B019D2A004FB8FF /* MaterialTransition.m in Sources */,
+				B3D460391B01AB12004FB8FF /* PresentCollectionView.m in Sources */,
 				B3D4600C1B019BC0004FB8FF /* AppDelegate.m in Sources */,
 				B3D460091B019BC0004FB8FF /* main.m in Sources */,
+				B3D460351B01A864004FB8FF /* PresentedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
